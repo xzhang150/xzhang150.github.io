@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.outer-box {
+    border: 5px solid blue;
+    padding: 20px;
+    width: 60%;
+    max-width: 600px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+.inner-box {
+    border: 5px solid red;
+    background-color: red;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.inner-box p {
+    text-align: left;
+
+}
+
+h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .outer-box {
+        width: 80%;
+    }
+
+    .inner-box {
+        padding: 20px;
+    }
+}
