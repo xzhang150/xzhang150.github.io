@@ -1,0 +1,198 @@
+/* Flexbox Part 1 */
+#flex-section1 ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	background-color: white;
+}
+
+#flex-section1 ul li a.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px; /* Common padding */
+	text-decoration: none;
+	color: white;
+	background-color: #CC0100;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+/* Custom widths for each button using nth-child selector */
+#flex-section1 ul li:nth-child(1) a.btn {
+	width: 125px; /* Width for Register/Login button */
+	margin-left: 51px;
+}
+
+#flex-section1 ul li:nth-child(2) a.btn {
+	width: 65px; /* Width for About button */
+}
+
+#flex-section1 ul li:nth-child(3) a.btn {
+	width: 118px; /* Width for Watch Videos button */
+}
+
+#flex-section1 ul li:nth-child(4) a.btn {
+	width: 142px; /* Width for Contact Support button */
+	margin-right: 48px;
+}
+
+#flex-section1 ul li a.btn:hover {
+	background-color: #A80000; /* Darker shade for hover effect */
+}
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+	display: flex; /* Activates flexbox layout */
+	padding: 0; /* Removes default padding */
+	margin: 0; /* Removes default margin */
+	list-style: none; /* Removes default list styling */
+}
+
+#flex-section2 li {
+	flex-grow: 1; /* Allows each item to grow equally */
+	flex-basis: 0; /* Sets the initial size of an element to 0 */
+	display: flex; /* Makes each list item a flex container */
+	justify-content: center; /* Centers content horizontally */
+	padding: 10px; /* Adds some padding inside the boxes */
+}
+
+#flex-section2 .item1 {
+	order: 1; /* Default order is 0, so this will be first */
+}
+
+#flex-section2 .item2 {
+	order: 3; /* This will move the second item to the end */
+}
+
+#flex-section2 .item3 {
+	order: 2; /* This will place the third item in the middle */
+}
+
+/* end Flexbox Part 2 */
+
+
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+	display: flex; /* Establishes a flex container */
+	justify-content: center; /* Centers the child element(s) horizontally */
+	align-items: center; /* Centers the child element(s) vertically */
+	height: 400px; /* Sets a specific height for the box */
+}
+
+#flex-section3 .card {
+	text-align: center; /* Centers the text inside the card */
+}
+
+#flex-section3 .tags ul {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 0; /* Removes the default padding */
+	list-style: none; /* Removes the default list item bullets */
+	display: flex; /* Displays the list items in a flex row */
+	justify-content: left; /* Centers the list items within the tags container */
+	flex-wrap: wrap; /* Allows list items to wrap onto the next line */
+	gap: 2px; /* Creates a gap between the list items */
+}
+
+#flex-section3 .tags ul li {
+	background-color: #e0e0e0; /* Light grey background for tags, similar to the example */
+	border-radius: 5px; /* Rounds the corners of the tags */
+}
+
+/* end Flexbox Part 3 */
+
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+	display: grid; /* Activates the grid layout */
+	grid-template-columns: repeat(4, 1fr); /* Creates four columns of equal width */
+	grid-gap: 20px; /* Sets the gap between the columns and rows */
+	grid-auto-rows: 100px; /* Sets the height of the automatically placed rows */
+}
+
+
+/* end Grid Part 1 */
+
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+	grid-column: 2 / 4;
+	grid-row: 1 / 4;
+	z-index: 2;
+}
+
+#grid-section2 .gridboxred {
+	grid-column: 1 / 3;
+	grid-row: 2 / 2;
+	z-index: 1;
+}
+
+/* end Grid Part 2 */
+
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr; /* First column is twice the width of the second */
+	grid-template-rows: 100px 300px 100px; /* Explicit row heights */
+	grid-gap: 10px; /* Gap between rows and columns */
+}
+
+#grid-section3 .box1 {
+	grid-column: 1 / -1; /* Span from the first to the last column */
+	grid-row: 1; /* Position in the first row */
+}
+
+#grid-section3 .box2 {
+	grid-column: 2; /* Position in the second column */
+	grid-row: 2; /* Position in the second row */
+}
+
+#grid-section3 .box3 {
+	grid-column: 1; /* Position in the first column */
+	grid-row: 2; /* Position in the second row */
+}
+
+#grid-section3 .box4 {
+	grid-column: 1 / -1; /* Span from the first to the last column */
+	grid-row: 3; /* Position in the third row */
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #ccc;
+	color: #000;
+	padding: 20px;
+	text-decoration: none;
+	transition: background-color 3s, color 3s;
+}
+
+#transition-section .box a:hover {
+	background-color: #cc0000;
+	color: #fff;
+	transition-duration: 0.5s;
+}
+
+/* end Transition Part */
