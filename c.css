@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  background-size: cover;
+  background-position-x: center;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(guanhai.jpg);
+  background-size: 100% 100%;
+}
+
+section .box {
+  position: relative;
+  z-index: 100;
+   display: -webkit-flex;  /* Safari */
+   display: flex;
+}
+section .box .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  right: 00px;
+  bottom: 00px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  /* -webkit-backdrop-filter: blur(50px); */
+  -moz-backdrop-filter: blur(60px);
+  /* filter: grayscale(50%); */
+  /* filter: opacity(50%) */
+  /* filter: blur(2px); */
+}
+section .box .container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 70px;
+  right: 00px;
+  top: 10px;
+  left: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  /* -webkit-backdrop-filter: blur(50px); */
+  -moz-backdrop-filter: blur(60px);
+  /* filter: grayscale(50%); */
+  /* filter: opacity(50%) */
+  /* filter: blur(2px); */
+}
+section .box .container .dycalendar {
+  width: 100%;
+  padding: 20px;
+}
+section .box .container .dycalendar table {
+  width: 100%;
+  margin-top: 40px;
+}
+.dycalendar-month-container .dycalendar-body table tr td {
+  color: #fff;
+  cursor: pointer;
+}
+.dycalendar-month-container .dycalendar-body table tr:nth-child(1) td {
+  background-color: rgba(31, 22, 22, 0.1);
+  border-radius: 7px;
+  font-weight: 400;
+}
+.dycalendar-month-container .dycalendar-body table tr td:hover {
+  background-color: #fff;
+  border-radius: 2px;
+  color: #000;
+}
+.dycalendar-month-container .dycalendar-target-date,
+.dycalendar-month-container .dycalendar-today-date {
+  background-color: rgb(240, 247, 246);
+  color: #000 !important;
+}
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.prev-btn,
+.dycalendar-month-container
+  .dycalendar-header
+  .dycalendar-prev-next-btn.next-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.dycalendar-month-container .dycalendar-span-month-year {
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}

@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+
+  background: url(观海.PNG);
+  background-size: cover;
+  background-position-x: center;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.dark {
+  background: url(nightmode.JPG);
+  background-size: cover;
+  background-position-x: center;
+}
+.box {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  min-width: 350px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  z-index: 10;
+  padding: 10px;
+  backdrop-filter: blur(25px);
+}
+.box h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.box .list {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.box .list:hover {
+  background: #fff;
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.15) translateX(30px) translateY(-15px);
+  z-index: 1000;
+}
+.box .list .imgBx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.box .list .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box .list .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.box .list .content .rank {
+  position: absolute;
+  right: -50px;
+  color: #03a9f4;
+  transition: 0.5s;
+  font-size: 2em;
+}
+.box .list .content .rank small {
+  font-weight: 500;
+  opacity: 0.25;
+}
+.box .list:hover .content .rank {
+  right: 20px;
+}
+.box .list .content h4 {
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.box .list .content p {
+  font-size: 0.75em;
+  transition: 0.5s;
+}
+.box .list:hover .content h4,
+.box .list:hover .content p {
+  color: #333;
+}
+/* .span {
+  position: absolute;
+  width: 4px;
+  height: 0px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 9s linear infinite;
+} */
+section.dark .span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
+}
+span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+  0% {
+    transform: rotate(-45deg) translateX(0);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+/* .span:nth-child(1) {
+  top: 0px;
+  right: 0px;
+  animation-delay: 1000s;
+  animation-duration: 1s;
+} */
+section.dark .span:nth-child(1) {
+  top: 0px;
+  right: 0px;
+  animation-delay: 0;
+  animation-duration: 3s;
+}
+/* .span:nth-child(2) {
+  top: 0px;
+  right: 80px;
+  animation-delay: 1000s;
+  animation-duration: 3s;
+} */
+section.dark .span:nth-child(2) {
+  top: 0px;
+  right: 80px;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+/* .span:nth-child(3) {
+  top: 80px;
+  right: 0px;
+  animation-delay: 1000.4s;
+  animation-duration: 2s;
+}
+.span:nth-child(4) {
+  top: 0px;
+  right: 180px;
+  animation-delay: 1000.6s;
+  animation-duration: 1.5s;
+}
+.span:nth-child(5) {
+  top: 0px;
+  right: 400px;
+  animation-delay: 1000.8s;
+  animation-duration: 2.5s;
+}
+.span:nth-child(6) {
+  top: 0px;
+  right: 600px;
+  animation-delay: 1000s;
+  animation-duration: 3s;
+}
+.span:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  animation-delay: 1000.2s;
+  animation-duration: 1.75s;
+}
+.span:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  animation-delay: 1000.4s;
+  animation-duration: 1.25s;
+}
+.span:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  animation-delay: 1000.75s;
+  animation-duration: 2.25s;
+}
+.span:nth-child(10) {
+  top: 0px;
+  right: 450px;
+  animation-delay: 1002.75s;
+  animation-duration: 2.25s;
+} */
+section.dark .span:nth-child(3) {
+  top: 80px;
+  right: 0px;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+section.dark .span:nth-child(4) {
+  top: 0px;
+  right: 180px;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
+}
+section.dark .span:nth-child(5) {
+  top: 0px;
+  right: 400px;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+section.dark .span:nth-child(6) {
+  top: 0px;
+  right: 600px;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+section.dark .span:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
+}
+section.dark .span:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
+}
+section.dark .span:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
+}
+section.dark .span:nth-child(10) {
+  top: 0px;
+  right: 450px;
+  animation-delay: 2.75s;
+  animation-duration: 2.25s;
+}
+.toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background: #e9f5ff;
+  justify-content: center;
+  align-items: center;
+}
+section.dark .toggle {
+  background: #404852;
+}
+.toggle:before {
+  content: "\f186";
+  font-size: 3em;
+  color: #2fa1ff;
+  font-family: fontAwesome;
+}
+section.dark .toggle:before {
+  content: "\f185";
+  font-size: 3em;
+  color: #fff;
+  font-family: fontAwesome;
+}
