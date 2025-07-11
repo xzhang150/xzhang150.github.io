@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74bc1700-ba3a-4c87-a8b4-83a5a1be6d17" name="Changes" comment="earth">
+    <list default="true" id="74bc1700-ba3a-4c87-a8b4-83a5a1be6d17" name="Changes" comment="dashboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -64,7 +64,12 @@
       <workItem from="1721873883647" duration="819000" />
       <workItem from="1723798825597" duration="2319000" />
       <workItem from="1723905133291" duration="1479000" />
-      <workItem from="1724290209771" duration="1677000" />
+      <workItem from="1724290209771" duration="4281000" />
+      <workItem from="1724405005216" duration="37000" />
+      <workItem from="1734170309400" duration="63000" />
+      <workItem from="1734171384765" duration="176000" />
+      <workItem from="1734171573955" duration="48000" />
+      <workItem from="1752216608969" duration="1166000" />
     </task>
     <task id="LOCAL-00001" summary="earth">
       <option name="closed" value="true" />
@@ -98,14 +103,83 @@
       <option name="project" value="LOCAL" />
       <updated>1724059497410</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dashboard">
+      <option name="closed" value="true" />
+      <created>1724292189998</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724292189998</updated>
+    </task>
+    <task id="LOCAL-00006" summary="dashboard">
+      <option name="closed" value="true" />
+      <created>1734171610799</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734171610799</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="61a3a875-a2a8-4840-b930-3bfe06b9729c" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="61a3a875-a2a8-4840-b930-3bfe06b9729c">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="earth" />
-    <option name="LAST_COMMIT_MESSAGE" value="earth" />
+    <MESSAGE value="dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard" />
   </component>
 </project>
